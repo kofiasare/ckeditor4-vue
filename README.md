@@ -1,4 +1,5 @@
 # CKEditor 4 WYSIWYG editor Vue component
+
 The official [CKEditor 4](https://ckeditor.com/ckeditor-4/) WYSIWYG editor component for Vue.
 
 ## Quick start
@@ -12,19 +13,19 @@ npm install --save ckeditor4-vue
 Include the `<script>` tags for the WYSIWYG editor component and the build:
 
 ```html
-<script src="../node_modules/@ckeditor/ckeditor5-vue/dist/ckeditor.js"></script>
+<script src="../node_modules/@ckeditor/ckeditor4-vue/dist/ckeditor.js"></script>
 ```
 
 Enable the component in your application by using the `Vue.use()` method:
 
 ```js
-Vue.use( CKEditor );
+Vue.use(CKEditor);
 ```
 
 Use the `<ckeditor>` component in your template:
 
-- The `v-model` attribute enables an out–of–the–box two–way data binding.
-- The `config` attribute lets you pass the configuration to the editor instance.
+-   The `v-model` attribute enables an out–of–the–box two–way data binding.
+-   The `config` attribute lets you pass the configuration to the editor instance.
 
 ## Contributing
 
@@ -48,10 +49,10 @@ npm install
 
 This repository contains the following code:
 
-* `./src/` contains the CKEditor component.
-* `./dist/` your build will go here.
-* `./sample/` is a demo application using the component. It requires build in `./dist/`.
-* `./tests/` tests for the component.
+-   `./src/` contains the CKEditor component.
+-   `./dist/` your build will go here.
+-   `./sample/` is a demo application using the component. It requires build in `./dist/`.
+-   `./tests/` tests for the component.
 
 #### Building samples
 
@@ -61,14 +62,16 @@ Run `npm build` to build the samples. The build artifacts will be stored in the 
 
 Run `npm test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 You can run tests with additional options:
-- `--url` (`-u`) - Url to `ckeditor.js` when you want to use other version than default.
-- `--watch` (`-w`) - Whether should watch changes in files.
-- `--source-map` (`-s`) - Whether to generate source maps.
-- `--browsers` (`-b`) - Comma separated browsers in which tests will be run.
-- `--coverage` (`-c`) - Whether to generate coverage report.
-- `--reporter` (`-r`) - Reporter for Karma to be used for tests output.
+
+-   `--url` (`-u`) - Url to `ckeditor.js` when you want to use other version than default.
+-   `--watch` (`-w`) - Whether should watch changes in files.
+-   `--source-map` (`-s`) - Whether to generate source maps.
+-   `--browsers` (`-b`) - Comma separated browsers in which tests will be run.
+-   `--coverage` (`-c`) - Whether to generate coverage report.
+-   `--reporter` (`-r`) - Reporter for Karma to be used for tests output.
 
 Example
+
 ```bash
 npm run test -- -u url/to/ckeditor.js -w -s -b Firefox,Chrome
 ```
